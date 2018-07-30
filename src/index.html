@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <!-- fontawesome Iconos -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <title>AltaFoto</title>
+</head>
+
+<body>
+
+
+  <div id="wrapper" class="active">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul id="sidebar_menu" class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a id="menu-toggle" href="#">
+            AltaFoto
+            <i class="fas fa-camera fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="sidebar-nav" id="sidebar">
+        <li class="text-center">
+          <a href="/home" class="link-nav">Home
+            <i class="fas fa-home fa-2x"></i>
+            </button>
+        </li>
+        <li class="text-center">
+          <a href="/listar" class="link-nav">Album
+            <i class="fas fa-images fa-2x"></i>
+          </a>
+          </button>
+        </li>
+        <li class="text-center">
+          <a href="/nuevo" class="link-nav">Subir
+            <i class="fas fa-cloud-upload-alt fa-2x"></i>
+          </a>
+          </button>
+        </li>
+        <li class="text-center">
+          <a href="/perfil" class="link-nav">Perfil
+            <i class="fas fa-user-circle fa-2x"></i>
+          </a>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Page content -->
+    <div class="container-fluid">
+      <section id="main">
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2">
+
+            </div>
+            <div class="col-lg-8">
+              <div class="jumbotron bg-light">
+                <h1 class="display-4">Hola, bienvenido!</h1>
+                <p class="lead">Esta es una pagina web para subir fotos agrengandoles título y descripción.</p>
+                <hr class="my-4">
+                <p>Para ver quien realizo la página haz click en el botón.</p>
+                <a class="btn btn-dark btn-lg" href="#" role="button" data-toggle="modal" data-target="#exampleModal">Click Aquí</a>
+              </div>
+            </div>
+            <div class="col-lg-2">
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Pagina Web creada por:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h3>Matías Pagano</h3>
+                <p>matias.pagano07@gmail.com</p>
+                <h3>Diego Pronesti</h3>
+                <p>dieh.diego@gmail.com</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+    </div>
+
+
+  </div>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("active");
+    });
+  </script>
+</body>
+
+</html>

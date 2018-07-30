@@ -1,0 +1,79 @@
+
+
+<div class="row fixtop">
+  <div class="col-2">
+      <div class="container-fluid">
+
+          <img class="fotodeperfil" id="dondevalaimagen"> </img>
+          <p class="nombredeperfil" id="dondevaelnombre"></p><button id="logOut" class="btn btn-sm btn-dark" style="float:right;">Salir</button> 
+        </div>
+    </div>
+  <div class="col-9">
+    <div class="container centrar imagetiles text-center ">
+      <img class="noregistradoimagen" id="noregistradoimagen"></img>
+      <p class="noregistradotexto" id="noregistradotexto"></p>
+
+      {{#each imagenes}}
+  
+      <div class="wrap">
+          <div class="tile"> 
+            <img src='{{imagen}}'/>
+            <div class="userDiv">
+              <h4 class="nombreusuario">{{owner}} </h4> 
+              <img class="nombreusuario ownerphoto" src="{{ownerphoto}}" />
+            </div>
+            <div class="text">
+            <h1 class="Link-title" >{{titulo}}</h1>          
+            <p class="animate-text">{{descripcion}}</p>
+            </div>
+            
+           </div>
+            
+            
+          </div>
+     
+
+      {{/each}}
+
+          <div id="googleLogin text-center">
+
+              <button id="entrar" class="btn btn-dark btn-lg"><i class="fas fa-user-circle"></i> Iniciar sesión con Google</button>
+
+
+              <div id="logueado">
+              <div id="root" data-toggle="collapse" href="#cerrar" role="button" aria-expanded="false" aria-controls="collapseExample"></div>
+              <div id="cerrar" class="collapse">
+                <div id="name" class="userName"></div>
+                
+              </div>
+            </div>
+
+          </div>
+
+
+      </div>
+  </div>
+  <div class="col-1">
+   
+  </div>
+</div>
+
+<script>
+
+</script>
+
+<!-- CARDS VIEJAS
+
+<div class="card  mb-3" style="width: 18rem; float: left; margin:2rem;">
+                <img class="card-img-top" src="{{imagen}}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">{{titulo}}</h5>
+                  <p class="card-text">{{descripcion}}</p>
+                   <a href="#" class="btn btn-danger">Eliminar</a> PROGRAMALO VOS 
+                </div>
+              </div>
+
+-->
+<!--
+
+-->
